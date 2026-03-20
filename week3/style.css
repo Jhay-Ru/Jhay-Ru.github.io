@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  margin-left: 20px;
+  line-height: 22px;
+  background-color: rgb(104, 55, 26);
+}
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  color: hotpink;
+}
+p {
+  color: blue;
+}
+h2 {
+  color: greenyellow;
+  font-family: cursive;
+}
+h1 {
+  color: rgb(80, 255, 115);
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+section {
+  text-align: center;
+  border: 10px solid rgb(44, 44, 44);
+  border-radius: 20px;
+}
+section > p {
+  border: 5px solid;
+}
+ul {
+  list-style: none;
+  margin-left: 20px;
+}
