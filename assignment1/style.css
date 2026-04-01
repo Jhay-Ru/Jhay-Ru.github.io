@@ -1,6 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+background-color: white;
 }
+/*I don't like html's default serif dont plus as well I find it harder to read*/
 .topbar {
   background-color: rgb(226, 226, 226);
   padding: 10px;
