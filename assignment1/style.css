@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topbar {
+  background-color: rgb(226, 226, 226);
+  padding: 10px;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.questions{
+padding: 10px;
+}
+.altquestion{
+    background-color: rgb(226, 226, 226);
+}
+div{
+    padding: 10px;
+}
+/*I noticed that the text was too bunched up togeather, adding spaxes between the questions would help
+*/
+.question {
+    font-weight: bold;
+    padding: 5px;
+}
+/*oh yeah- that bolded question makes it so much better and actually the padding as well/*
