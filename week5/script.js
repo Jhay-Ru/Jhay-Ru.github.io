@@ -43,7 +43,7 @@ console.log("city visited", city[1]);
 
 //if else, conditionals
 if (isHoliday) {
-  console.log("no clad");
+  console.log("no class");
 } else {
   console.log("yes class");
 }
