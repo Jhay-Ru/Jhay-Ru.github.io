@@ -1,0 +1,14 @@
+.round {
+  border-radius: 50%;
+}
+img {
+  display: block;
+  margin: 20px;
+}
+button {
+  font-size: 2rem;
+  padding: 20px 20px;
+}
+body {
+  background-color: white;
+}
