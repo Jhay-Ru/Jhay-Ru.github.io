@@ -108,8 +108,8 @@ function updateProgress() {
 
 //-------------------------------------------------------
 const videoList = [
-  { id: 1, src: "stardust.mp4" },
-  { id: 2, src: "zenscape.mp4" },
+  { id: 1, src: "stardust.mp4", name: "stardust" }, //a table where the value can be referenced later
+  { id: 2, src: "zenscape.mp4", name: "zenscape" },
   {
     id: 3,
     src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
@@ -138,5 +138,14 @@ function chooseVideo(id) {
   console.log(videoList[id].src);
   myVideo.src = videoList[id].src; //switch the video
   myVideo.load(); //load in the video
-  myVideo;
+  myVideo.play();
+}
+//--------------------
+const msg = document.querySelector("#msg");
+console.log(msg);
+
+function chooseVideo(id) {
+  console.log(videoList[id].name);
+  msg.textContent = "nowplaying: " + videoList[id].name; //get the name of the video id from the table "name"
+  myVideo.src = videoList[id].src;
 }
