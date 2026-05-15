@@ -24,16 +24,30 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
 }
 
 /* Add additional styles as needed */
+.photo-container { /*i wanted to make a container for eqach image with explanation text,*/
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: var(--secondary-bg-color);
+  padding: 20px;
+  margin : 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+img{
+  border-radius: 8px;
+}
 .side-bar {
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
   padding: 20px;
-  height: 500px;
-  /*scrolling functionality*/
-  height: 400px; 
+  /*originaly had a height tag and was struggling on figuring why it didn't span the whole hight of the video, removed the tag and now it is fixed*/
+  /*scrolling functionality*/; 
   overflow-y: auto; 
 }
   .player-layout {
@@ -47,8 +61,27 @@ h2 {
 .step {
  background-color: var(--primary-bg-color);
   padding: 5px;
-  margin-top: 3%;
-  margin-bottom: 3px; /*gaps between each step*/
+  margin: 10px; /*gaps between each step*/
+}
+.main-title {
+  font-size: 60px;
+  color: var(--main-text-color);
+  font-weight: bold;
+  padding: 1px;
+}
+.custom-controls{
+padding: 10px;
+border: 5px solid var(--secondary-bg-color);
+border-radius: 10px;
+}
+
+button{ 
+  cursor: pointer;
+  border : 10px solid #000;
+  border-radius: 5px;
+}
+button:hover {
+  scale: 0.9;
 }
 /* Create a container for the main content */
 .container {
@@ -56,8 +89,15 @@ h2 {
   flex-direction: column; 
   align-items: center; 
   width: 100%;
-margin-top: 2rem;
-padding: 3rem; /*scaleable*/
+padding: 1rem; /*rem so i can make it scaleable*/  
+
+}
+section
+{
+color: var(--main-text-color);
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 /* Header styling */
 header {
