@@ -1,0 +1,167 @@
+body {
+  background-color: #1a120b;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5e5cb;
+  /* color: #3c2a21; */
+  font-size: 1.1rem;
+  gap: 1.5rem;
+}
+
+.outer {
+  border: 2px dashed #e5e5cb7a;
+  width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  opacity: 1;
+  /* background-color: cornsilk; */
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    background-color 0.5s ease;
+}
+button {
+  padding: 20px 30px;
+  scale: 1;
+  font-size: 1.5rem;
+  border-radius: 9px;
+  border-style: none;
+  background-color: whitesmoke;
+  cursor: pointer; /*changes the cursor when hovered*/
+  transition:
+    background-color 0.2s ease,
+    scale 0.8s ease; /*transition from this falue to the hover value for the button*/
+}
+button:hover {
+  background-color: #9e9e9e;
+  scale: 1.1;
+}
+
+#duck-icon {
+  transition: fill 0.8s ease;
+}
+
+#duck-icon:active {
+  fill: rgb(48, 48, 111);
+}
+#duck {
+  transition:
+    scale 0.5s ease,
+    rotate 0.5s ease,
+    translate 0.8s ease;
+  cursor: pointer;
+  overflow: hidden;
+  animation: bounce 2s linear infinite;
+}
+#duck:hover {
+  scale: 1.1;
+  rotate: 20deg;
+}
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a120b;
+  border: 5px dotted white;
+  animation-name: promo, sale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes sale {
+  /*create keyframes*/
+  0% {
+    background-color: rgb(183, 45, 45);
+  }
+  20% {
+    background-color: rgb(197, 114, 12);
+  }
+  40% {
+    background-color: rgb(233, 233, 27);
+  }
+  60% {
+    background-color: rgb(9, 163, 55);
+  }
+  80% {
+    background-color: rgb(60, 30, 210);
+  }
+  100% {
+    background-color: rgb(106, 11, 144);
+  }
+}
+@keyframes promo {
+  /* FIX 2: Animate 'border-color' instead of 'border' */
+  0% {
+    border-color: rgb(205, 30, 167);
+  }
+  20% {
+    border-color: rgb(102, 27, 223);
+  }
+  40% {
+    border-color: rgb(0, 216, 68);
+  }
+  60% {
+    border-color: rgb(255, 255, 23);
+  }
+  80% {
+    border-color: rgb(244, 102, 20);
+  }
+  100% {
+    /* Optional: Added 100% so it loops smoothly back to the start */
+    border-color: rgb(205, 30, 167);
+  }
+}
+
+#loader {
+  width: 100px;
+  height: 100px;
+  border: solid red;
+  border-bottom: solid blue;
+  border-radius: 100%;
+  animation-name: spinning;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spinning {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  70%,
+  100% {
+    translate: 0px 0px;
+  }
+  40% {
+    translate: 0px -30px;
+  }
+  60% {
+    translate: 0px -20px;
+  }
+  80% {
+    translate: 0px -10px;
+  }
+}
