@@ -53,3 +53,53 @@ if (buttonU && soundU) {
     soundU.play();
   });
 }
+
+const buttonB = document.querySelector(".Bsound");
+const soundB = document.querySelector("#b");
+
+if (buttonB && soundB) {
+  buttonB.addEventListener("click", () => {
+    soundB.currentTime = 0;
+    soundB.play();
+  });
+}
+
+const buttonC = document.querySelector(".Csound");
+const soundC = document.querySelector("#c");
+
+if (buttonC && soundC) {
+  buttonC.addEventListener("click", () => {
+    soundC.currentTime = 0;
+    soundC.play();
+  });
+}
+
+const buttonD = document.querySelector(".Dsound");
+const soundD = document.querySelector("#d");
+
+if (buttonD && soundD) {
+  buttonD.addEventListener("click", () => {
+    soundD.currentTime = 0;
+    soundD.play();
+  });
+}
+
+const buttonF = document.querySelector(".Fsound");
+const soundF = document.querySelector("#f");
+
+if (buttonF && soundF) {
+  buttonF.addEventListener("click", () => {
+    soundF.currentTime = 0;
+    soundF.play();
+  });
+}
+
+const buttonG = document.querySelector(".Gsound");
+const soundG = document.querySelector("#g");
+
+if (buttonG && soundG) {
+  buttonG.addEventListener("click", () => {
+    soundG.currentTime = 0;
+    soundG.play();
+  });
+}
